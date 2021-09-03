@@ -1,0 +1,99 @@
+.private-browsing-indicator {
+	border: 2px solid #d0d;
+	border-radius: 20px;
+	display: none;
+}
+#TabsToolbar:hover {
+	background-color: #000 !important;
+}
+
+#TabsToolbar:hover {
+	background-color: darkmagenta !important;
+}
+
+:root[tabsintitlebar] .tab-label:-moz-window-inactive {
+	color: red;
+}
+
+#navigator-toolbox[fullscreenShouldAnimate] {
+	transition: none !important;
+}
+
+[uidensity='compact']:root {
+	--tab-min-height: 16px !important;
+	--newtab-margin: -3px 0 -3px -3px !important;
+}
+
+:root[uidensity='compact'] #tabbrowser-tabs {
+	--tab-min-height: var(--tab-min-height) !important;
+}
+
+.tabbrowser-tab {
+	max-height: var(--tab-min-height) !important;
+}
+
+.tabs-newtab-button {
+	fill: magenta !important;
+	background-color: magenta;
+	margin: var(--newtab-margin) !important;
+}
+
+#urlbar {
+	background-color: magenta !important;
+	height: 20px !important;
+}
+
+.tab-background[selected='true'] {
+	background-color: darkred !important;
+}
+
+tab[selected='true'] {
+	-moz-appearance: none !important;
+	color: red !important;
+	background-color: #ffffff;
+}
+
+tab:not([selected='true']) {
+	color: magenta !important;
+}
+
+#forward-button,
+#back-button,
+#reload-button,
+#PanelUI-menu-button,
+#nav-bar-overflow-button,
+#new-tab-button,
+#library-button,
+#stop-button {
+	fill: magenta !important;
+}
+
+.tab-close-button:hover {
+	fill: black !important;
+	color: #00000000 !important;
+}
+
+:root {
+	scrollbar-color: magenta #0000 !important;
+	scrollbar-width: thin !important;
+}
+
+#searchbar {
+	background-color: #ffffff !important;
+	color: #c2c4c5 !important;
+	border-color: #fffff3 !important;
+}
+
+#urlbar:not(.megabar),
+#urlbar.megabar > #urlbar-background,
+#searchbar {
+	background-color: #282c2f !important;
+	color: magenta !important;
+	border-color: #ffffff !important;
+}
+#urlbar:not(.megabar)[focused='true'],
+#urlbar.megabar[focused='true'] > #urlbar-background,
+#searchbar[focused='true'] {
+	background-color: #3c4043 !important;
+	border-color: #5b6e8b !important;
+}
