@@ -1,0 +1,48 @@
+@-moz-document url(about:privatebrowsing) {
+	.search-handoff-button {
+		background: #c0c !important;
+		border-radius: 23px !important;
+	}
+	.info {
+		display: none !important;
+	}
+	body {
+		padding: 0px !important;
+		align-items: normal !important;
+	}
+	#search-handoff-button {
+		margin: 0px 25px !important;
+	}
+	.container {
+		width: 100% !important;
+		max-width: none !important;
+		min-width: none !important;
+	}
+	.fake-textbox {
+		display: none !important;
+		text-align: center !important;
+	}
+	.search-handoff-button.focused:not(.disabled) {
+		border: solid 2px cyan !important;
+		box-shadow: none !important;
+
+	}
+	.search-handoff-button {
+		box-shadow: none !important;	
+	}
+	#fake-editable {
+		color: white !important;
+	}
+	input {
+		display:inline-block;
+		text-align: center !important;
+	}
+	.wordmark {
+		fill: #d0d !important;
+	}
+	.search-inner-wrapper {
+		min-width: 0px !important;
+	}
+	/*.logo {
+	}*/
+}
