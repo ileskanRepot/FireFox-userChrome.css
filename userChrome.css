@@ -2,10 +2,11 @@
 	border: 2px solid #d0d;
 	border-radius: 20px;
 	display: none;
+	background-color: #000 !important;
 }
 
-#TabsToolbar:hover {
-	background-color: darkmagenta !important;
+#TabsToolbar-customization-target {
+    height: 28px !important
 }
 
 :root[tabsintitlebar] .tab-label:-moz-window-inactive {
@@ -21,6 +22,23 @@
 	--newtab-margin: -3px 0 -3px -3px !important;
 }
 
+#tabbrowser-tabs {
+	height: 28px !important;
+	min-height: 26px !important;
+}
+
+#tab-close-button {
+	padding: 5px !important;
+	margin: 1px -8px 0 0 !important;
+	width: 20px !important;
+	height: 20px !important;
+}
+
+#tabs-newtab-button {
+	display: none;
+}
+
+
 :root[uidensity='compact'] #tabbrowser-tabs {
 	--tab-min-height: var(--tab-min-height) !important;
 }
@@ -31,13 +49,13 @@
 }
 
 .close-icon {
-	max-height: 40px !important;
+	max-height: 30px !important;
 }
 
 .close-icon:hover {
 	fill: black !important;
 	background-color: red !important;
-	border-radius: 4px;
+	border-radius: 1px;
 }
 
 
@@ -48,10 +66,15 @@
 
 #urlbar {
 	background-color: magenta !important;
-	height: 20px !important;
+	height: 10px !important;
 }
 
+.tab-content {
+	height: 26px !important;
+}
 .tab-background[selected='true'] {
+	height: 20px !important;
+	min-height: 20px !important;
 	background-color: darkred !important;
 }
 
@@ -76,6 +99,14 @@ tab:not([selected='true']) {
 	fill: magenta !important;
 }
 
+.scrollbox-clip, #nav-bar, #PersonalToolbar {
+	background-color: black !important;
+}
+
+.tab-loading-burst {
+	background-color: #000000 !important;
+}
+
 :root {
 	scrollbar-color: magenta #0000 !important;
 	scrollbar-width: thin !important;
@@ -86,14 +117,14 @@ tab:not([selected='true']) {
 #urlbar:not(.megabar),
 #urlbar.megabar > #urlbar-background,
 #searchbar {
-	background-color: #282c2f !important;
+	background-color: #ffffff00 !important;
 	color: magenta !important;
 	border-color: #ffffff !important;
 }
 #urlbar:not(.megabar)[focused='true'],
 #urlbar.megabar[focused='true'] > #urlbar-background,
 #searchbar[focused='true'] {
-	background-color: #3c4043 !important;
+	background-color: #ffffff !important;
 	border-color: #5b6e8b !important;
 }
 
@@ -109,3 +140,6 @@ tab:not([selected='true']) {
 	background-color: #000000 !important;
 }
 
+#category-more-from-mozilla {
+  display: none !important;
+}

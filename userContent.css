@@ -43,6 +43,25 @@
 	.search-inner-wrapper {
 		min-width: 0px !important;
 	}
+	.promo {
+		display: none !important;
+	}
 	/*.logo {
 	}*/
+}
+
+@-moz-document url(about:home), url(about:newtab) {
+	body {
+		background-color: black !important;
+	}
+}
+
+@-moz-document url-prefix("ylilauta.org") {
+	body {
+		padding: 0px !important;
+		background-color: black !important;
+	}
+	span {
+		color: white !important;
+	}
 }
